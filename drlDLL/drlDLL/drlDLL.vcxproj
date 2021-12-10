@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2352E74A-7478-4CB2-A002-5446D1B6D0E5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>drlDLL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <CudaToolkitCustomDir>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0</CudaToolkitCustomDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelTBB>true</UseIntelTBB>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\songwen\source\repos\drlDLL\graphnn\include;C:\Users\songwen\Documents\csp_drl\or-tools-master\dependencies\install\include;C:\Users\songwen\Documents\csp_drl\or-tools-master;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\or-tools-master;..\..\or-tools-master\dependencies\install\include;include;graphnn\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mkl\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mkl\lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mkl\lib\intel64_win;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DRLDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DRLDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DRLDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;DRLDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mkl\lib\intel64_win\mkl_core.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mkl\lib\intel64_win\mkl_intel_lp64.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mkl\lib\intel64_win\mkl_intel_thread.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\tbb\lib\intel64_win\vc_mt\tbb.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\compiler\lib\intel64_win\libiomp5md.lib;cublas.lib;cuda.lib;cudadevrt.lib;cudart.lib;cudart_static.lib;cusparse.lib;curand.lib;OpenCL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="graphnn\include\nn\abs_error.h" />
+    <ClInclude Include="graphnn\include\nn\arg_max.h" />
+    <ClInclude Include="graphnn\include\nn\axpby.h" />
+    <ClInclude Include="graphnn\include\nn\binary_logloss.h" />
+    <ClInclude Include="graphnn\include\nn\concat_cols.h" />
+    <ClInclude Include="graphnn\include\nn\cross_entropy.h" />
+    <ClInclude Include="graphnn\include\nn\elewise_add.h" />
+    <ClInclude Include="graphnn\include\nn\elewise_minus.h" />
+    <ClInclude Include="graphnn\include\nn\elewise_mul.h" />
+    <ClInclude Include="graphnn\include\nn\entropy.h" />
+    <ClInclude Include="graphnn\include\nn\exp.h" />
+    <ClInclude Include="graphnn\include\nn\expr_sugar.h" />
+    <ClInclude Include="graphnn\include\nn\factor.h" />
+    <ClInclude Include="graphnn\include\nn\factor_graph.h" />
+    <ClInclude Include="graphnn\include\nn\fully_connected.h" />
+    <ClInclude Include="graphnn\include\nn\hit_at_k.h" />
+    <ClInclude Include="graphnn\include\nn\identity.h" />
+    <ClInclude Include="graphnn\include\nn\inner_product.h" />
+    <ClInclude Include="graphnn\include\nn\in_top_k.h" />
+    <ClInclude Include="graphnn\include\nn\is_equal.h" />
+    <ClInclude Include="graphnn\include\nn\jagged_softmax.h" />
+    <ClInclude Include="graphnn\include\nn\kxplusb.h" />
+    <ClInclude Include="graphnn\include\nn\l2_col_norm.h" />
+    <ClInclude Include="graphnn\include\nn\matmul.h" />
+    <ClInclude Include="graphnn\include\nn\moving_norm.h" />
+    <ClInclude Include="graphnn\include\nn\msg_pass.h" />
+    <ClInclude Include="graphnn\include\nn\multinomial_sample.h" />
+    <ClInclude Include="graphnn\include\nn\multi_matmul.h" />
+    <ClInclude Include="graphnn\include\nn\nat_log.h" />
+    <ClInclude Include="graphnn\include\nn\nn_all.h" />
+    <ClInclude Include="graphnn\include\nn\one_hot.h" />
+    <ClInclude Include="graphnn\include\nn\optimizer.h" />
+    <ClInclude Include="graphnn\include\nn\param_set.h" />
+    <ClInclude Include="graphnn\include\nn\reduce.h" />
+    <ClInclude Include="graphnn\include\nn\reduce_mean.h" />
+    <ClInclude Include="graphnn\include\nn\relu.h" />
+    <ClInclude Include="graphnn\include\nn\row_selection.h" />
+    <ClInclude Include="graphnn\include\nn\sigmoid.h" />
+    <ClInclude Include="graphnn\include\nn\softmax.h" />
+    <ClInclude Include="graphnn\include\nn\sparse_dense_matmul.h" />
+    <ClInclude Include="graphnn\include\nn\square_error.h" />
+    <ClInclude Include="graphnn\include\nn\tanh.h" />
+    <ClInclude Include="graphnn\include\nn\type_cast.h" />
+    <ClInclude Include="graphnn\include\nn\variable.h" />
+    <ClInclude Include="graphnn\include\tensor\binary_functor.h" />
+    <ClInclude Include="graphnn\include\tensor\cpu_dense_tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\cpu_row_sparse_tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\cpu_sparse_tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\cpu_unary_functor.h" />
+    <ClInclude Include="graphnn\include\tensor\cuda_helper.h" />
+    <ClInclude Include="graphnn\include\tensor\cu_rand_kernel.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_binary_functor.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_dense_tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_handle.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_reduce_kernel.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_row_sparse_tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_sparse_tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\gpu_unary_functor.h" />
+    <ClInclude Include="graphnn\include\tensor\mkl_helper.h" />
+    <ClInclude Include="graphnn\include\tensor\tensor.h" />
+    <ClInclude Include="graphnn\include\tensor\tensor_all.h" />
+    <ClInclude Include="graphnn\include\tensor\t_data.h" />
+    <ClInclude Include="graphnn\include\tensor\t_shape.h" />
+    <ClInclude Include="graphnn\include\tensor\unary_functor.h" />
+    <ClInclude Include="graphnn\include\util\fmt.h" />
+    <ClInclude Include="graphnn\include\util\gnn_macros.h" />
+    <ClInclude Include="graphnn\include\util\graph_struct.h" />
+    <ClInclude Include="graphnn\include\util\mem_holder.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\graph.h" />
+    <ClInclude Include="include\inet.h" />
+    <ClInclude Include="include\i_env.h" />
+    <ClInclude Include="include\nstep_replay_mem.h" />
+    <ClInclude Include="include\old_qnet.h" />
+    <ClInclude Include="include\qnet.h" />
+    <ClInclude Include="include\sum_tree_base.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="drlDLL.cpp" />
+    <ClCompile Include="graph.cpp" />
+    <ClCompile Include="graphnn\src\nn\abs_error.cpp" />
+    <ClCompile Include="graphnn\src\nn\arg_max.cpp" />
+    <ClCompile Include="graphnn\src\nn\axpby.cpp" />
+    <ClCompile Include="graphnn\src\nn\binary_logloss.cpp" />
+    <ClCompile Include="graphnn\src\nn\concat_cols.cpp" />
+    <ClCompile Include="graphnn\src\nn\cross_entropy.cpp" />
+    <ClCompile Include="graphnn\src\nn\elewise_add.cpp" />
+    <ClCompile Include="graphnn\src\nn\elewise_minus.cpp" />
+    <ClCompile Include="graphnn\src\nn\elewise_mul.cpp" />
+    <ClCompile Include="graphnn\src\nn\entropy.cpp" />
+    <ClCompile Include="graphnn\src\nn\exp.cpp" />
+    <ClCompile Include="graphnn\src\nn\factor_graph.cpp" />
+    <ClCompile Include="graphnn\src\nn\fully_connected.cpp" />
+    <ClCompile Include="graphnn\src\nn\hit_at_k.cpp" />
+    <ClCompile Include="graphnn\src\nn\identity.cpp" />
+    <ClCompile Include="graphnn\src\nn\inner_product.cpp" />
+    <ClCompile Include="graphnn\src\nn\in_top_k.cpp" />
+    <ClCompile Include="graphnn\src\nn\is_equal.cpp" />
+    <ClCompile Include="graphnn\src\nn\jagged_softmax.cpp" />
+    <ClCompile Include="graphnn\src\nn\kxplusb.cpp" />
+    <ClCompile Include="graphnn\src\nn\l2_col_norm.cpp" />
+    <ClCompile Include="graphnn\src\nn\matmul.cpp" />
+    <ClCompile Include="graphnn\src\nn\moving_norm.cpp" />
+    <ClCompile Include="graphnn\src\nn\msg_pass.cpp" />
+    <ClCompile Include="graphnn\src\nn\multinomial_sample.cpp" />
+    <ClCompile Include="graphnn\src\nn\multi_matmul.cpp" />
+    <ClCompile Include="graphnn\src\nn\nat_log.cpp" />
+    <ClCompile Include="graphnn\src\nn\one_hot.cpp" />
+    <ClCompile Include="graphnn\src\nn\optimizer.cpp" />
+    <ClCompile Include="graphnn\src\nn\param_set.cpp" />
+    <ClCompile Include="graphnn\src\nn\reduce.cpp" />
+    <ClCompile Include="graphnn\src\nn\reduce_mean.cpp" />
+    <ClCompile Include="graphnn\src\nn\relu.cpp" />
+    <ClCompile Include="graphnn\src\nn\row_selection.cpp" />
+    <ClCompile Include="graphnn\src\nn\sigmoid.cpp" />
+    <ClCompile Include="graphnn\src\nn\softmax.cpp" />
+    <ClCompile Include="graphnn\src\nn\sparse_dense_matmul.cpp" />
+    <ClCompile Include="graphnn\src\nn\square_error.cpp" />
+    <ClCompile Include="graphnn\src\nn\tanh.cpp" />
+    <ClCompile Include="graphnn\src\nn\type_cast.cpp" />
+    <ClCompile Include="graphnn\src\nn\variable.cpp" />
+    <ClCompile Include="graphnn\src\tensor\cpu_dense_tensor.cpp" />
+    <ClCompile Include="graphnn\src\tensor\cpu_row_sparse_tensor.cpp" />
+    <ClCompile Include="graphnn\src\tensor\cpu_sparse_tensor.cpp" />
+    <ClCompile Include="graphnn\src\tensor\tensor.cpp" />
+    <ClCompile Include="graphnn\src\tensor\t_data.cpp" />
+    <ClCompile Include="graphnn\src\tensor\t_shape.cpp" />
+    <ClCompile Include="graphnn\src\util\fmt.cpp" />
+    <ClCompile Include="graphnn\src\util\graph_struct.cpp" />
+    <ClCompile Include="graphnn\src\util\mem_holder.cpp" />
+    <ClCompile Include="inet.cpp" />
+    <ClCompile Include="nstep_replay_mem.cpp" />
+    <ClCompile Include="old_qnet.cpp" />
+    <ClCompile Include="qnet.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sum_tree_base.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="graphnn\src\nn\binary_logloss.cu" />
+    <CudaCompile Include="graphnn\src\nn\cross_entropy.cu" />
+    <CudaCompile Include="graphnn\src\nn\entropy.cu" />
+    <CudaCompile Include="graphnn\src\nn\hit_at_k.cu" />
+    <CudaCompile Include="graphnn\src\nn\in_top_k.cu" />
+    <CudaCompile Include="graphnn\src\nn\jagged_softmax.cu" />
+    <CudaCompile Include="graphnn\src\nn\l2_col_norm.cu" />
+    <CudaCompile Include="graphnn\src\nn\relu.cu" />
+    <CudaCompile Include="graphnn\src\nn\sigmoid.cu" />
+    <CudaCompile Include="graphnn\src\nn\softmax.cu" />
+    <CudaCompile Include="graphnn\src\nn\tanh.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_binary_functor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_dense_tensor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_handle.cu">
+      <TargetMachinePlatform Condition="'$(Configuration)|$(Platform)'=='Release|x64'">64</TargetMachinePlatform>
+    </CudaCompile>
+    <CudaCompile Include="graphnn\src\tensor\gpu_row_sparse_tensor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_sparse_tensor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\t_data.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.0.targets" />
+  </ImportGroup>
+</Project>

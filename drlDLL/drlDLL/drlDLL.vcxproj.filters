@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\i_env.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nstep_replay_mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\old_qnet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qnet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\abs_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\arg_max.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\axpby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\binary_logloss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\concat_cols.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\cross_entropy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\elewise_add.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\elewise_minus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\elewise_mul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\entropy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\exp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\expr_sugar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\factor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\factor_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\fully_connected.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\hit_at_k.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\identity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\in_top_k.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\inner_product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\is_equal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\jagged_softmax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\kxplusb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\l2_col_norm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\matmul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\moving_norm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\msg_pass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\multi_matmul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\multinomial_sample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\nat_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\nn_all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\one_hot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\optimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\param_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\reduce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\reduce_mean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\relu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\row_selection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\sigmoid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\softmax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\sparse_dense_matmul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\square_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\tanh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\type_cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\nn\variable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\binary_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\cpu_dense_tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\cpu_row_sparse_tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\cpu_sparse_tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\cpu_unary_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\cu_rand_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\cuda_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_binary_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_dense_tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_handle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_reduce_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_row_sparse_tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_sparse_tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\gpu_unary_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\mkl_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\t_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\t_shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\tensor_all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\tensor\unary_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\util\fmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\util\gnn_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\util\graph_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphnn\include\util\mem_holder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sum_tree_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drlDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nstep_replay_mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="old_qnet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\abs_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\arg_max.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\axpby.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\binary_logloss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\concat_cols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\cross_entropy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\elewise_add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\elewise_minus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\elewise_mul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\entropy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\exp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\factor_graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\fully_connected.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\hit_at_k.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\identity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\in_top_k.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\inner_product.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\is_equal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\jagged_softmax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\kxplusb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\l2_col_norm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\matmul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\moving_norm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\msg_pass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\multi_matmul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\multinomial_sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\nat_log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\one_hot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\optimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\param_set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\reduce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\reduce_mean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\relu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\row_selection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\sigmoid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\softmax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\sparse_dense_matmul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\square_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\tanh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\type_cast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\nn\variable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\tensor\cpu_dense_tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\tensor\cpu_row_sparse_tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\tensor\cpu_sparse_tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\tensor\t_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\tensor\t_shape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\tensor\tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\util\fmt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\util\graph_struct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphnn\src\util\mem_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sum_tree_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="graphnn\src\tensor\gpu_binary_functor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_dense_tensor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_handle.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_row_sparse_tensor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\gpu_sparse_tensor.cu" />
+    <CudaCompile Include="graphnn\src\tensor\t_data.cu" />
+    <CudaCompile Include="graphnn\src\nn\binary_logloss.cu" />
+    <CudaCompile Include="graphnn\src\nn\cross_entropy.cu" />
+    <CudaCompile Include="graphnn\src\nn\entropy.cu" />
+    <CudaCompile Include="graphnn\src\nn\hit_at_k.cu" />
+    <CudaCompile Include="graphnn\src\nn\in_top_k.cu" />
+    <CudaCompile Include="graphnn\src\nn\jagged_softmax.cu" />
+    <CudaCompile Include="graphnn\src\nn\l2_col_norm.cu" />
+    <CudaCompile Include="graphnn\src\nn\relu.cu" />
+    <CudaCompile Include="graphnn\src\nn\softmax.cu" />
+    <CudaCompile Include="graphnn\src\nn\sigmoid.cu" />
+    <CudaCompile Include="graphnn\src\nn\tanh.cu" />
+  </ItemGroup>
+</Project>
