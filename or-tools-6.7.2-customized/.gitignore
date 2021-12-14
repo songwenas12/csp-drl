@@ -1,0 +1,79 @@
+Makefile.local
+CMakeLists.txt.user
+
+dependencies/archives/
+!dependencies/archives/autoconf.patch
+!dependencies/archives/patchelf-0.8.tar.gz
+
+dependencies/install/
+dependencies/sources/
+
+
+or-tools*.tar.gz
+or-tools*.zip
+*.a
+*.o
+*.so
+*.py[co]
+*.lib
+*.exp
+*.pdb
+*.ass
+*.swp
+
+bin/
+ortools/gen/
+objs/
+temp/
+temp-python*
+lib/
+examples/csharp/solution/*.csproj
+examples/csharp/*.sln
+examples/notebook/.ipynb_checkpoints
+
+ortools/bazel-*
+examples/bazel-*
+bazel-*
+
+tools/docker/export
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+bin/*.exe
+bin/*.app
+
+*build*/*
+.idea/*
+.idea/
+build/
+cache/
+**/.vscode/*
+.DS_Store
+
+tools/netstandard/CreateSigningKey/bin
+tools/netstandard/CreateSigningKey/obj

@@ -1,0 +1,78 @@
+sudo: required
+language: generic
+
+matrix:
+  include:
+# Makefile builder
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: gcc
+      env: BUILDER=make DISTRO=native LANGUAGE=cc
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: gcc
+      env: BUILDER=make DISTRO=native LANGUAGE=python
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: gcc
+      env: BUILDER=make DISTRO=native LANGUAGE=java
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: gcc
+      env: BUILDER=make DISTRO=native LANGUAGE=csharp
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: gcc
+      env: BUILDER=make DISTRO=native LANGUAGE=fsharp
+
+    - os: osx
+      language: cpp
+      compiler: clang
+      env: BUILDER=make DISTRO=native LANGUAGE=cc
+    - os: osx
+      language: cpp
+      compiler: clang
+      env: BUILDER=make DISTRO=native LANGUAGE=python
+    - os: osx
+      language: cpp
+      compiler: clang
+      env: BUILDER=make DISTRO=native LANGUAGE=java
+    - os: osx
+      language: cpp
+      compiler: clang
+      env: BUILDER=make DISTRO=native LANGUAGE=csharp
+    - os: osx
+      language: cpp
+      compiler: clang
+      env: BUILDER=make DISTRO=native LANGUAGE=fsharp
+# CMake Build Generator
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: gcc
+      env: BUILDER=cmake DISTRO=native
+    - os: linux
+      dist: trusty
+      language: cpp
+      compiler: clang
+      env: BUILDER=cmake DISTRO=native
+
+    - os: osx
+      language: cpp
+      compiler: gcc
+      env: BUILDER=cmake DISTRO=native
+    - os: osx
+      language: cpp
+      compiler: clang
+      env: BUILDER=cmake DISTRO=native
+
+install:
+  - ./.travis/install.sh
+
+script:
+  - ./.travis/script.sh
