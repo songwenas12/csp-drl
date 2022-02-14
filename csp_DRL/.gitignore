@@ -53,3 +53,4 @@ wheels/
 train_pool_randCSP/
 test_pool_randCSP/
 log/
+!pre_compiled_libs/
