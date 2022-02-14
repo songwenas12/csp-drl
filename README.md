@@ -1,6 +1,7 @@
 # CSP-DRL
-Implementation of the EAAI paper [Learning Variable Ordering Heuristics for Solving Constraint Satisfaction Problems](https://www.sciencedirect.com/science/article/pii/S0952197621004255). Engineering Applications of Artificial Intelligence (EAAI), 2022.
+Implementation of the EAAI paper [Learning Variable Ordering Heuristics for Solving Constraint Satisfaction Problems](https://www.sciencedirect.com/science/article/pii/S0952197621004255). *Engineering Applications of Artificial Intelligence (EAAI)*, 2022. 
 
+ArXiv version is [here](https://arxiv.org/pdf/1912.10762.pdf).
 ```
 @article{song2022learning,
   title={Learning variable ordering heuristics for solving Constraint Satisfaction Problems},
